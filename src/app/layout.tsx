@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import './globals.css';
+import { Providers } from './providers';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,6 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header/>
         <main className='px-5 flex justify-center w-full py-10' style={{ minHeight: 'calc(100vh - 56px - 56px - 2px)' }}>
           <section className='max-w-screen-xl w-full'>
+            <Providers>
+              {children}
+            </Providers>
           </section>
         </main>
         <Footer/>
