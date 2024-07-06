@@ -2,12 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menus from '../client/menus'
+import './css/header.css'
 
 // menu list
 const menus = [
-  { name: 'Home', link: '/aa' },
-  { name: 'Project', link: '/' },
-  { name: 'Blog', link: '/' },
+  { name: 'Feature', link: '/' },
+  { name: 'Pricing', link: '/' },
+  { name: 'Testimonial', link: '/' },
+  { name: 'FAQ', link: '/' },
 ]
 
 export default async function Header() {
@@ -20,12 +22,12 @@ export default async function Header() {
           </Link>
 
           <div className='hidden md:flex flex-1 justify-between'>
-            <menu className='flex md:gap-9 sm:gap-5 gap-3'>
+            {/* 鼠标hover出现下划线 */}
+            <menu className='flex md:gap-20 sm:gap-5 gap-3'>
               {menus.map((menu, index) => (
-                <Link href={menu.link} key={index}>{menu.name}</Link>
+                <Link href={menu.link} key={index} className='menu-link'>{menu.name}</Link>
               ))}
             </menu>
-            <Link href="/">Sign in</Link>
           </div>
 
           <div className='flex md:hidden'>

@@ -1,0 +1,15 @@
+/* styles.css */
+.menu-link {
+  @apply relative text-current no-underline inline-block;
+}
+
+.menu-link::after {
+  content: '';
+  @apply absolute w-0 h-[3px] bg-current transition-all duration-300 ease-in-out;
+  bottom: -5px;
+  left: 0;
+}
+
+.menu-link:hover::after {
+  @apply w-full;
+}
