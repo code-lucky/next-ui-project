@@ -21,12 +21,19 @@ export default function Home() {
 
       <div>
         <h1>Welcome to Next.js!</h1>
-        <Feature />
 
-        <Pricing />
+        <section id="feature">
+          <Feature />
+        </section>
 
-        <Faq />
+        <section id="pricing">
+          <Pricing />
+        </section>
 
+        <section id="faq">
+          <Faq />
+        </section>
+        
         {/* <div aria-hidden="true" className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
           <div
             style={{

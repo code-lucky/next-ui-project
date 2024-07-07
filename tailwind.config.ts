@@ -2,6 +2,7 @@ import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'media', // 或 'media'
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        // 自定义颜色
+        darkBg: '#000', // 你可以替换成你需要的颜色值
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

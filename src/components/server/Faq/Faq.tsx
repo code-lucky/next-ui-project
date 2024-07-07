@@ -4,7 +4,7 @@ import React from 'react'
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 const defaultContent =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-export default async function Header() {
+export default function Header() {
   return (
     <>
       <div className='flex justify-center max-w-7xl w-full mt-10 flex-col relative left-0 right-0 mx-auto'>

@@ -6,13 +6,12 @@ import './css/header.css'
 
 // menu list
 const menus = [
-  { name: 'Feature', link: '/' },
-  { name: 'Pricing', link: '/' },
-  { name: 'Testimonial', link: '/' },
-  { name: 'FAQ', link: '/' },
+  { name: 'Feature', link: '/#feature' },
+  { name: 'Pricing', link: '/#pricing' },
+  { name: 'FAQ', link: '/#faq' },
 ]
 
-export default async function Header() {
+export default function Header() {
   return (
     <>
       <header className='flex justify-center px-5 border-b'>

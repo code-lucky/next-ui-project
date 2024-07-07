@@ -1,4 +1,4 @@
-export default async function Footer() {
+export default function Footer() {
     return (
         <>
             <footer className='flex justify-center px-5 border-t'>
