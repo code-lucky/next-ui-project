@@ -4,7 +4,6 @@ const i18n = {
     defaultLocale: 'en',
 }
 
-
 module.exports  = {
     i18n
 };
