@@ -1,11 +1,14 @@
 import Feature from '@/components/server/Feature/Feature'
 import Pricing from '@/components/server/Pricing/Pricing'
 import Faq from '@/components/server/Faq/Faq'
+import { defaultLocale, getDictionary } from '@/lib/i18n';
 
-export default function Home() {
+export default async function Home({params}: {params: any}) {
+  const langName = params.lang || defaultLocale;
+	const dict = await getDictionary(langName); // 获取内容
+
   return (
     <>
-
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -23,7 +26,7 @@ export default function Home() {
         <h1>Welcome to Next.js!</h1>
 
         <section id="feature">
-          <Feature />
+          <Feature locale={dict.Feature} langName={langName} />
         </section>
 
         <section id="pricing">
@@ -33,7 +36,7 @@ export default function Home() {
         <section id="faq">
           <Faq />
         </section>
-        
+
         {/* <div aria-hidden="true" className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
           <div
             style={{

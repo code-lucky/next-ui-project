@@ -7,7 +7,7 @@ const pricings = [
   { title: 'Pro', price: 99.99, features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5'] },
 ]
 
-export default function Header() {
+export default function Pricing() {
   return (
     <>
       <div className='flex justify-center max-w-7xl w-full mt-10 flex-col relative left-0 right-0 mx-auto'>
