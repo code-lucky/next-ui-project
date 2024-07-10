@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import Link from 'next/link'
 import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure, Listbox, ListboxSection, ListboxItem } from '@nextui-org/react';
 
 interface props {
