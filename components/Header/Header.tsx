@@ -55,9 +55,9 @@ export default function App() {
             </Button>
           </DropdownTrigger>
           <DropdownMenu aria-label="Example with disabled actions">
-            <DropdownItem key="new">New file</DropdownItem>
-            <DropdownItem key="copy">Copy link</DropdownItem>
-            <DropdownItem key="edit">Edit file</DropdownItem>
+            {/* 获取语言列表 */}
+            <DropdownItem key="en" onClick={() => setLangName('en')}>EN</DropdownItem>
+            <DropdownItem key="zh" onClick={() => setLangName('zh')}>ZH</DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <NavbarMenuToggle className="sm:hidden" aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
